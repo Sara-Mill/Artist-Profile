@@ -13,39 +13,42 @@
 <body>
   <section class="hero is-link has-background-link has-text-centered ">
     <div class="hero-body">
-      <p class="title">
+      <p class="title is-size-1">
         Know Your Artist
       </p>
       <p class="subtitle">
-        subtitle
+        Search for a music artist below to find information about them
       </p>
     </div>
   </section>
 <br>
 
+<label class="label has-text-link is-size-4 has-text-centered ">Search Artist Name:</label>
+
 <div class="field has-addons is-grouped is-grouped-centered">
-  <label class="label has-text-link">Serch Artist Name</label>
+  
   <div class="control">
-    <input class="input" type="text" placeholder="Enter name of artist">
+    <input class="input artist" type="text" placeholder="Enter name of artist">
   </div>
   <div class="control">
-    <a class="button is-link">
+    <button class="button is-link">
       Search
-    </a>
+    </button>
   </div>
 </div>
 
- 
+<br>
+
+<div class="block has-background-link has-text-centered has-text-light is-size-3 is-6">
+  <p>Artist: <span id="searchedArtist"></span></p>
+</div>
+
+ <br>
+
 <div class = "columns is-variable is-3">
-  <div class = "column is-6">
+  <div class = "column ">
      <div class = "has-background-link has-text-centered has-text-light is-size-3">
         Sound Cloud
-
-
-
-
-
-
      </div>
   </div>
   <div class = "column is-6">
@@ -59,7 +62,12 @@
   </div>    
 </div>
   
+<<<<<<< HEAD
   <script src="https://apis.google.com/js/api.js"></script>
   <script src ="javascript/ytscript.js"></script>
+=======
+
+<script src="./javascript/script.js"></script>
+>>>>>>> 0ae9abf8cf077645ac0d168ad29d22f7afaec2ab
 </body>
 </html>

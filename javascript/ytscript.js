@@ -18,12 +18,11 @@ function getApi() {
 }
 execute.addEventListener('click', getApi);
 
-  /*$.ajax({
-    url: requestUrl,
-    method: 'GET',
-  }).then(function (response) {
-    console.log('Ajax Response \n-----------');
-    console.log(response)
-  });
-};
-*/
+function searchByKeyword() {
+  var results = YouTube.Search.list('id,snippet', {q: 'dogs', maxResults: 25});
+
+  for(var i in results.items) {
+    var item = results.items[i];
+    Logger.log('[%s] Title: %s', item.id.videoId, item.snippet.title);
+  }
+}
