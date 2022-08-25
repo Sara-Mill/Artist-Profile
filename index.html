@@ -13,35 +13,38 @@
 <body>
   <section class="hero is-link has-background-link has-text-centered ">
     <div class="hero-body">
-      <p class="title">
+      <p class="title is-size-1">
         Know Your Artist
       </p>
       <p class="subtitle">
-        subtitle
+        Search for a music artist below to find information about them
       </p>
     </div>
   </section>
 <br>
 
+<label class="label has-text-link is-size-4 has-text-centered ">Search Artist Name:</label>
+
 <div class="field has-addons is-grouped is-grouped-centered">
-  <label class="label has-text-link">Search Artist Name  </label>
+  
   <div class="control">
     <input class="input artist" type="text" placeholder="Enter name of artist">
   </div>
   <div class="control">
-    <div id="msg"></div>
     <button class="button is-link">
       Search
     </button>
   </div>
 </div>
 
-<div class="block has-background-link has-text-centered has-text-light is-size-3">
+<br>
+
+<div class="block has-background-link has-text-centered has-text-light is-size-3 is-6">
   <p>Artist: <span id="searchedArtist"></span></p>
 </div>
 
+ <br>
 
- 
 <div class = "columns is-variable is-3">
   <div class = "column ">
      <div class = "has-background-link has-text-centered has-text-light is-size-3">
@@ -52,9 +55,14 @@
      <div class = "has-background-link has-text-centered has-text-light is-size-3">
         Youtube Video
      </div>
-  </div>
+     
+      <div class = "ytButtons">
+        <button onclick="loadClient()"id ="execute">execute</button>
+      </div>
+  </div>    
 </div>
   
+<<<<<<< HEAD
 <<<<<<< HEAD
 <script src="C:\Users\sabil\Documents\MSU\Artist-Profile\Artist-Profile\javascript\ytscript.js"></script>
 <script src="https://apis.google.com/js/api.js"></script>
@@ -62,5 +70,13 @@
 
 <script src="./javascript/script.js"></script>
 >>>>>>> 3cc1ed380b13f71e8530aad334c290ba6faa2e21
+=======
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src ="javascript/ytscript.js"></script>
+=======
+
+<script src="./javascript/script.js"></script>
+>>>>>>> 0ae9abf8cf077645ac0d168ad29d22f7afaec2ab
+>>>>>>> 211a52d34a7e0df6a2fba54afe5cc99ea1286c5e
 </body>
 </html>
