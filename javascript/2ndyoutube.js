@@ -17,7 +17,7 @@ $(document).ready(function() {
             //Extracting the value of user input and storing it inside search variable
             var search = $("#search1").val()
 
-            //This will pass through the api key, and the user input from search, and display 2 videos
+            //This will pass through the api key + the user input from search, and display 2 videos
             videoSearch(API_KEY,search, 2)
 
     })
@@ -44,7 +44,7 @@ $(document).ready(function() {
                 $("#videos1").append(video)
         });
 
-        })
-    }   
+        });
+    };   
 
-})
+});
