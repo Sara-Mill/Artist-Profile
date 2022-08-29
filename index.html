@@ -8,6 +8,7 @@
   <!--bulma style link-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -24,21 +25,21 @@
 <br>
 
 <div class="field has-addons is-grouped is-grouped-centered">
-  <label class="label has-text-link">Serch Artist Name</label>
+  <label class="label has-text-link">Search Artist Name</label>
   <div class="control">
     <input class="input" type="text" placeholder="Enter name of artist">
   </div>
   <div class="control">
-    <a class="button is-link">
+    <button class="button is-link" id="searchbutton">
       Search
-    </a>
+    </button>
   </div>
 </div>
 
  
 <div class = "columns is-variable is-3">
   <div class = "column is-6">
-     <div class = "has-background-link has-text-centered has-text-light is-size-3">
+     <div id="soundcloud" class = "has-background-link has-text-centered has-text-light is-size-3">
         Sound Cloud
 
 
@@ -56,6 +57,8 @@
 </div>
   
 
+<script src="./javascript/script.js">
+</script>
 
 </body>
 </html>
