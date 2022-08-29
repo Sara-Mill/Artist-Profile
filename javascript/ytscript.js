@@ -1,9 +1,9 @@
 var apikey= "AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI"
-var execute = document.getElementById('execute')
+var execute = document.getElementById('execute');
 var setApiKey= ("");
 var searchArtist=("");
 var button= document.querySelector(".button");
-var videosEl=document.getElementById("videos")
+var videosEl=document.getElementById("videos");
  
 
 function getApi() {
