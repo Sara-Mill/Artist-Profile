@@ -29,7 +29,7 @@
 <!--Search button-->
 <div class="field has-addons is-grouped is-grouped-centered">
   <div class="control">
-    <input class="input artist" type="text" placeholder="Enter name of artist">
+    <input class="input artist" id = "inputArtist" type="text" placeholder="Enter name of artist">
   </div>
   <div class="control">
     <button class="button is-link" id = "search">
@@ -58,17 +58,45 @@
         Youtube Video
      </div>
      <ol id="videos"></ol>
-     
+        
       <div class = "ytButtons">
         <button id ="execute">execute</button>
       </div>
   </div>    
 </div>
   
+    <div class="container">
+      <br>
+      <h1>Mini YouTube</h1>
+      <br>
+
+        <form id ="form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search1">
+            </div>
+            <div class="form-group">
+                <input type="submit" class= "btn btn-danger" value="search">
+            </div>
+        </form>
+
+        <div class="row">
+              <div class ="col-md-12">
+                  <div id = "videos1">
+
+                  </div>
+              </div>
+        </div>
+
+    </div>
+
+
 <!--Script tags-->
+
+<!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://apis.google.com/js/api.js"></script>  
   <script src ="javascript/ytscript.js"></script>
-
+  <script src="./javascript/2ndyoutube.js"></script>
 
 
 <script src="./javascript/script.js"></script>

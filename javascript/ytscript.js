@@ -24,6 +24,6 @@ function getApi() {
       console.log(videosEl)
       videosEl.appendChild(videos1)
     }
-  });console.log(response)
+  });
 }
 execute.addEventListener('click', getApi);
