@@ -1,6 +1,26 @@
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
+var button= document.querySelector(".button");
+var searchedArtist = document.querySelector("#searchedArtist");
+var msgDiv = document.querySelector("#msg");
 
+//button function to search artist
+button.addEventListener("click", function(event){
+event.preventDefault();
+
+var artist = document.querySelector(".artist").value;
+
+  localStorage.setItem("artist", artist);
+
+displayLastSearch();
+});
+
+function displayLastSearch() {
+    var artist = localStorage.getItem("artist");
+
+   searchedArtist.textContent = artist;
+    console.log(artist);
+}
 
 const options = {
 	method: 'GET',
