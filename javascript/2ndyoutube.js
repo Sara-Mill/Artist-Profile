@@ -12,7 +12,6 @@ $(document).ready(function() {
     //Make a Get Request by targeting the search form
     $("#form").submit(function(event) {
             event.preventDefault()
-            alert("form is submitted")
 
             //Extracting the value of user input and storing it inside search variable
             var search = $("#search1").val()
