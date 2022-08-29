@@ -16,8 +16,8 @@ $(document).ready(function() {
             //Extracting the value of user input and storing it inside search variable
             var search = $("#search1").val()
 
-            //This will pass through the api key + the user input from search, and display 2 videos
-            videoSearch(API_KEY,search, 2)
+            //This will pass through the api key + the user input from search, and display 5 videos
+            videoSearch(API_KEY,search, 5)
 
     })
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
         $("#videos1").empty()
 
         //Make Get Request to the API endpoint
-        $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=" + maxResults + "&q=" + search,function(data){
+        $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&videoEmbeddable=true&videoSyndicated=true&maxResults=" + maxResults + "&q=" + search,function(data){
             console.log(data)
 
             data.items.forEach(item => {
