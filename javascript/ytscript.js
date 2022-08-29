@@ -5,6 +5,8 @@ var searchArtist=("");
 var button= document.querySelector(".button");
 var videosEl=document.getElementById("videos");
  
+//Disabled the execute button for now
+document.getElementById("execute").disabled = true;
 
 function getApi() {
   var requestUrl= 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=' + searchArtist + 'mostPopular&regionCode=US&key=AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI';
