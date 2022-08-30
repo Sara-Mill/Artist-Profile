@@ -34,14 +34,12 @@
 </section>
 <!--Search button-->
 <div class="field has-addons is-grouped is-grouped-centered">
-
   <label class="label has-text-link">Search Artist Name</label>
 
   <div class="control">
     <input class="input artist" id = "inputArtist" type="text" placeholder="Enter name of artist">
   </div>
   <div class="control">
-
 
     <button class="button is-link" id="searchbutton">
     <button class="button is-link" id = "search">
@@ -61,57 +59,32 @@
 
  <br>
 <!--Displays Wikipidia page-->
+
 <div class = "columns is-variable is-3">
-
-
-  <div class = "column is-6">
-     
-
   <div class = "column ">
      <div class = "has-background-link has-text-centered has-text-light is-size-3">
         Wikipidia
-
      </div>
   </div>
-</div>
   <!--Displays youtube video-->
-  <div class = "column is-6">
+  <div class = "column is-variable is-6">
      <div class = "has-background-link has-text-centered has-text-light is-size-3">
         Youtube Video
      </div>
+     
      <ol id="videos"></ol>
-            <div class="container has-background-link">
-      <br>
 
-        <form id ="form">
-            <div class="form-group">
-                <input type="text" class="form-control" id="search1">
-            </div>
-            <div class="form-group">
-                <input type="submit" class= "btn btn-danger" value="search">
-            </div>
-        </form>
-
-        <div class="row">
+        <div class="container has-background-link">
+      <h2 id="h2">Note:  All copyrighted videos will be watched on youtube:  click "watch on youtube" inside videobox if your video doesn't load</h2>
+       <div class="row">
               <div class ="col-md-12">
-      <h2 id="h2" class="has-text-centered">Note:  All copyrighted videos will be watched on youtube:  click "watch on youtube" inside videobox if your video doesn't load</h2>
+                  <div id = "videos1"> </div>
 
-        <div class="row ">
-              <div class ="col-md-12  ">
-                  <div id = "videos1">
-
-                  </div>
               </div>
         </div>
-
-    </div>
-     
-
-  <!--This is the you tube mini player-->
-  
-
-
-
+      </div>
+  </div>    
+</div>
 <!--Script tags-->
 
 <!--jQuery-->
@@ -119,6 +92,7 @@
   <script src="https://apis.google.com/js/api.js"></script>
 <!--Custom Javascript--> 
 
+  
   <script src="./javascript/2ndyoutube.js"></script>
   <script src="./javascript/script.js"></script>
 
