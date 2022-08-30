@@ -1,5 +1,12 @@
+/*Color and height of background*/
 body {
     background-color: black;
     height: 100vh;
+<<<<<<< HEAD
     color: white;
   }
+=======
+
+    color: white;
+  }
+>>>>>>> d7fb7b9d00e96c81e3801c6c43ce8dd6fea010fc

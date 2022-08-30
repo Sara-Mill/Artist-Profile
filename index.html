@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--head of webpage-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +10,53 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css"/>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
+<!--Body of webpage-->
 <body>
+  <!--Header-->
   <section class="hero is-link has-background-link has-text-centered ">
     <div class="hero-body">
-      <p class="title">
+      <p class="title is-size-1">
         Know Your Artist
       </p>
       <p class="subtitle">
-        subtitle
+        Search for a music artist below to find information about them
       </p>
     </div>
   </section>
 <br>
+<!--Label of search button-->
+<label class="label has-text-link is-size-4 has-text-centered ">Search Artist Name:</label>
 
+<!--Search button-->
 <div class="field has-addons is-grouped is-grouped-centered">
+<<<<<<< HEAD
   <label class="label has-text-link">Search Artist Name</label>
+=======
+>>>>>>> d7fb7b9d00e96c81e3801c6c43ce8dd6fea010fc
   <div class="control">
-    <input class="input" type="text" placeholder="Enter name of artist">
+    <input class="input artist" id = "inputArtist" type="text" placeholder="Enter name of artist">
   </div>
   <div class="control">
+<<<<<<< HEAD
     <button class="button is-link" id="searchbutton">
+=======
+    <button class="button is-link" id = "search">
+>>>>>>> d7fb7b9d00e96c81e3801c6c43ce8dd6fea010fc
       Search
     </button>
   </div>
 </div>
 
- 
+<br>
+<!--Displays artist's name-->
+<div class="column has-background-link has-text-centered has-text-light is-size-3 is-6 is-half is-offset-one-quarter ">
+  <p>Artist: <span id="searchedArtist"></span></p>
+</div>
+
+ <br>
+<!--Displays Wikipidia page-->
 <div class = "columns is-variable is-3">
+<<<<<<< HEAD
   <div class = "column is-6">
      <div id="soundcloud" class = "has-background-link has-text-centered has-text-light is-size-3">
         Sound Cloud
@@ -47,18 +66,66 @@
 
 
 
+=======
+  <div class = "column ">
+     <div class = "has-background-link has-text-centered has-text-light is-size-3">
+        Wikipidia
+>>>>>>> d7fb7b9d00e96c81e3801c6c43ce8dd6fea010fc
      </div>
   </div>
+  <!--Displays youtube video-->
   <div class = "column is-6">
      <div class = "has-background-link has-text-centered has-text-light is-size-3">
         Youtube Video
      </div>
-  </div>
+     <ol id="videos"></ol>
+        
+      <div class = "ytButtons">
+        <button id ="execute">execute</button>
+      </div>
+  </div>    
 </div>
+
+  <!--This is the you tube mini player-->
   
+    <div class="container">
+      <br>
+      <h1>Mini YouTube</h1>
+      <br>
+      <h2 id="h2">Note:  All copyrighted videos will be watched on youtube:  click "watch on youtube" inside videobox if your video doesn't load</h2>
+
+        <form id ="form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search1">
+            </div>
+            <div class="form-group">
+                <input type="submit" class= "btn btn-danger" value="search">
+            </div>
+        </form>
+
+        <div class="row">
+              <div class ="col-md-12">
+                  <div id = "videos1">
+
+                  </div>
+              </div>
+        </div>
+
+    </div>
+
+
+<!--Script tags-->
+
+<!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+<!--Custom Javascript--> 
+  <script src ="javascript/ytscript.js"></script>
+  <script src="./javascript/2ndyoutube.js"></script>
 
 <script src="./javascript/script.js">
 </script>
 
+<script src="./javascript/script.js"></script>
 </body>
 </html>
