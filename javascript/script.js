@@ -1,4 +1,3 @@
-
 var buttonEl = document.getElementById(".searchbutton");
 var button = document.querySelector(".button");
 var searchedArtist = document.querySelector("#searchedArtist");
@@ -71,4 +70,5 @@ buttonEl.addEventListener('click', apicall)
 
 buttonEl.addEventListener('click', fetchArtist)
 fetchArtist()
+
 
