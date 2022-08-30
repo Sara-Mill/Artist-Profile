@@ -44,3 +44,10 @@ body{
 .button:hover{
   background-color: rgb(156, 8, 156);
 }
+body {
+    background-color: black;
+    height: 150vh;
+
+    color: white;
+  }
+
