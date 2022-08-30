@@ -1,6 +1,5 @@
-var buttonEl = document.getElementById("searchbutton");
-console.log(buttonEl)
-var button= document.querySelector(".button");
+var buttonEl = document.getElementById(".searchbutton");
+var button = document.querySelector(".button");
 var searchedArtist = document.querySelector("#searchedArtist");
 var msgDiv = document.querySelector("#msg");
 
@@ -31,10 +30,11 @@ const options = {
 };
 function apicall(event) {
     event.preventDefault()
-    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`, options)
+    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${inputArtist}`, options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+	console.log("test");
 
 }
 var getData = () =>{
