@@ -1,5 +1,6 @@
-var buttonEl = document.getElementById("searchbutton");
-console.log(buttonEl)
+var buttonEl = document.getElementById(".searchbutton");
+var button = document.querySelector(".button");
+var searchedArtist = document.querySelector("#searchedArtist");
 var button= document.querySelector(".button");
 var searchedArtistEl = document.querySelector("#searchedArtist");
 var searchField=document.getElementById("inputArtist");
@@ -32,10 +33,11 @@ const options = {
 };
 function apicall(event) {
     event.preventDefault()
-    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`, options)
+    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${inputArtist}`, options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+	console.log("test");
 
 }
 var getData = () =>{
@@ -63,14 +65,10 @@ function fetchArtist(event){
 	})
 	control.append(userInput, artistUrl);
 }
+
+buttonEl.addEventListener('click', apicall)
+
 buttonEl.addEventListener('click', fetchArtist)
 fetchArtist()
 
-function appendData(data) {
-	var mainContainer = document.getElementById("wiki");
-	for (var i = 0; i < data.length; i++) {
-	  var div = document.createElement("div");
-	  div.innerHTML = 'Name: ' + data[i].firstName + ' ' + data[i].lastName;
-	  mainContainer.appendChild(div);
-	}
-  }
+
