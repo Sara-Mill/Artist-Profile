@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+var buttonEl = document.getElementById("searchbutton");
+console.log(buttonEl)
+
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'b0a5799d28msh34be151581c8ca3p122bbejsn6bc36006be7a',
+		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+	}
+};
+function apicall(event) {
+    event.preventDefault()
+    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`, options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+}
+var getData = () =>{
+	var userInput = input.value
+	console.log(userInput)
+	
+}
+function fetchArtist(search){
+	let artistUrl=`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`
+	fetch(artistUrl)
+	.then(function(res){
+		return res.json()
+
+
+	}).then (function (data){
+		if(!data){
+			alert("no artist found")
+		}else{
+			console.log(data)
+		}
+	})
+}
+buttonEl.addEventListener('click', apicall)
+=======
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
 var button= document.querySelector(".button");
@@ -58,3 +100,4 @@ function fetchArtist(search){
 	})
 }
 buttonEl.addEventListener('click', apicall)
+>>>>>>> d7fb7b9d00e96c81e3801c6c43ce8dd6fea010fc
