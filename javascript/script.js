@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
 
@@ -39,7 +39,8 @@ function fetchArtist(search){
 	})
 }
 buttonEl.addEventListener('click', apicall)
-=======
+
+
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
 var button= document.querySelector(".button");
@@ -100,4 +101,4 @@ function fetchArtist(search){
 	})
 }
 buttonEl.addEventListener('click', apicall)
->>>>>>> d7fb7b9d00e96c81e3801c6c43ce8dd6fea010fc
+
