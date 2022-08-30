@@ -1,53 +1,8 @@
-<<<<<<< HEAD
-=======
-
-var buttonEl = document.getElementById("searchbutton");
-console.log(buttonEl)
-
-
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'b0a5799d28msh34be151581c8ca3p122bbejsn6bc36006be7a',
-		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
-	}
-};
-function apicall(event) {
-    event.preventDefault()
-    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`, options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
-}
-var getData = () =>{
-	var userInput = input.value
-	console.log(userInput)
-	
-}
-function fetchArtist(search){
-	let artistUrl=`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`
-	fetch(artistUrl)
-	.then(function(res){
-		return res.json()
-
-
-	}).then (function (data){
-		if(!data){
-			alert("no artist found")
-		}else{
-			console.log(data)
-		}
-	})
-}
-buttonEl.addEventListener('click', apicall)
-
-
->>>>>>> f0a763305413a574377fb5f2707346396e1f5bf5
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
 var button= document.querySelector(".button");
-var searchedArtist = document.querySelector("#searchedArtist");
+var searchedArtistEl = document.querySelector("#searchedArtist");
+var searchField=document.getElementById("inputArtist");
 var msgDiv = document.querySelector("#msg");
 
 //button function to search artist
@@ -64,14 +19,14 @@ displayLastSearch();
 function displayLastSearch() {
     var artist = localStorage.getItem("artist");
 
-   searchedArtist.textContent = artist;
+   searchedArtistEl.textContent = artist;
     console.log(artist);
 }
 
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'b0a5799d28msh34be151581c8ca3p122bbejsn6bc36006be7a',
+		'X-RapidAPI-Key': '39199c42cbmshb55e136036913e3p103af6jsn4756f3c15e5c',
 		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
 	}
 };
@@ -87,10 +42,14 @@ var getData = () =>{
 	var userInput = input.value
 	console.log(userInput)
 	
-}
-function fetchArtist(search){
-	let artistUrl=`https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`
-	fetch(artistUrl)
+} 
+function fetchArtist(event){
+	event.preventDefault();
+	
+	var searchTerm=searchField.value
+	
+	let artistUrl=`https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchTerm}`
+	fetch(artistUrl, options)
 	.then(function(res){
 		return res.json()
 
@@ -104,8 +63,5 @@ function fetchArtist(search){
 	})
 	control.append(userInput, artistUrl);
 }
-buttonEl.addEventListener('click', apicall)
-<<<<<<< HEAD
-=======
-
->>>>>>> f0a763305413a574377fb5f2707346396e1f5bf5
+buttonEl.addEventListener('click', fetchArtist)
+fetchArtist()
