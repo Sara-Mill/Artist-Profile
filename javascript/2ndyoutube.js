@@ -1,20 +1,20 @@
 //Write the function using jQuery
 $(document).ready(function() {
 
-    var API_KEY= "AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI";
+    var API_KEY= "AIzaSyCcHAR_B8YZIieZPmgHgV5vu93C_Hh9sFU";
 
     var video = ""
 
 
     //Make a Get Request by targeting the search form
-    $("#form").submit(function(event) {
+    $(".button").click(function(event) {
             event.preventDefault()
 
             //Extracting the value of user input and storing it inside search variable
-            var search = $("#search1").val()
+            var search = $("#inputArtist").val()
 
             //This will pass through the api key + the user input from search, and display 5 videos
-            videoSearch(API_KEY,search, 5)
+            videoSearch(API_KEY,search, 4)
 
     })
 
