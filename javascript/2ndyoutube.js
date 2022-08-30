@@ -1,6 +1,3 @@
-
-var requestUrl="https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI&type=video&q=" +searchArtist;
-
 //Write the function using jQuery
 $(document).ready(function() {
 
