@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 //var apikey=AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI
 var search = document.getElementById('search')
 
 function getApi() {
   var requestUrl= 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI';
 
-=======
+
 var apikey= "AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI"
 var execute = document.getElementById('execute')
 
@@ -14,7 +14,7 @@ var execute = document.getElementById('execute')
 /*function getApi() {
   var requestUrl= 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI';
   var response = "";
->>>>>>> 211a52d34a7e0df6a2fba54afe5cc99ea1286c5e
+
   fetch(requestUrl)
   .then(function(response) {
     return response.json();
@@ -39,7 +39,7 @@ search.addEventListener('click', getApi);
   });
 };
 */
-=======
+
 execute.addEventListener('click', getApi);
 
  /**
@@ -70,4 +70,4 @@ execute.addEventListener('click', getApi);
   }
   gapi.load("client");
   loadClient
->>>>>>> 211a52d34a7e0df6a2fba54afe5cc99ea1286c5e
+
