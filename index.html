@@ -13,9 +13,9 @@
 <!--Body of webpage-->
 <body>
   <!--Header-->
-  <section class="hero is-link has-background-link has-text-centered ">
+  <section class="block">
     <div class="hero-body">
-      <p class="title is-size-1">
+      <p class="block-text">
         Know Your Artist
       </p>
       <p class="subtitle">
@@ -25,8 +25,13 @@
   </section>
 <br>
 <!--Label of search button-->
-<label class="label has-text-link is-size-4 has-text-centered ">Search Artist Name:</label>
-
+<section class="block2">
+  <div class="hero-body">
+    <p class="block-text">
+      Search Artist Name:
+    </p>
+  </div>
+</section>
 <!--Search button-->
 <div class="field has-addons is-grouped is-grouped-centered">
 
@@ -37,8 +42,10 @@
   </div>
   <div class="control">
 
+
     <button class="button is-link" id="searchbutton">
     <button class="button is-link" id = "search">
+
       Search
     </button>
   </div>
@@ -46,9 +53,11 @@
 
 <br>
 <!--Displays artist's name-->
-<div class="column has-background-link has-text-centered has-text-light is-size-3 is-6 is-half is-offset-one-quarter ">
-  <p>Artist: <span id="searchedArtist"></span></p>
-</div>
+<section class="block3">
+  <div class="hero-body">
+    <p class="block-text">Artist: <span id="searchedArtist"></span></p>
+  </div>
+</section>
 
  <br>
 <!--Displays Wikipidia page-->
@@ -73,6 +82,18 @@
      <ol id="videos"></ol>
             <div class="container has-background-link">
       <br>
+
+        <form id ="form">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search1">
+            </div>
+            <div class="form-group">
+                <input type="submit" class= "btn btn-danger" value="search">
+            </div>
+        </form>
+
+        <div class="row">
+              <div class ="col-md-12">
       <h2 id="h2" class="has-text-centered">Note:  All copyrighted videos will be watched on youtube:  click "watch on youtube" inside videobox if your video doesn't load</h2>
 
         <div class="row ">
