@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
@@ -41,6 +43,7 @@ function fetchArtist(search){
 buttonEl.addEventListener('click', apicall)
 
 
+>>>>>>> f0a763305413a574377fb5f2707346396e1f5bf5
 var buttonEl = document.getElementById("searchbutton");
 console.log(buttonEl)
 var button= document.querySelector(".button");
@@ -99,6 +102,10 @@ function fetchArtist(search){
 			console.log(data)
 		}
 	})
+	control.append(userInput, artistUrl);
 }
 buttonEl.addEventListener('click', apicall)
+<<<<<<< HEAD
+=======
 
+>>>>>>> f0a763305413a574377fb5f2707346396e1f5bf5
