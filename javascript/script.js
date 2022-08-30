@@ -65,3 +65,12 @@ function fetchArtist(event){
 }
 buttonEl.addEventListener('click', fetchArtist)
 fetchArtist()
+
+var p = document.getElementById("myPelement")
+fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`, options')
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        p.innerText = data
+    });
