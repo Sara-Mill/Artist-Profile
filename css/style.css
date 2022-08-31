@@ -1,11 +1,22 @@
 body {
   background-color: black;
   height: 150vh;
-
   color: white;
 }
+
 
 .videos{
   display: flex;
   justify-content: center;
+}
+
+#h2 {
+  text-align: center;
+}
+
+#videos1 {
+  margin-left: 85px;
+  
+li {
+  color:white
 }
