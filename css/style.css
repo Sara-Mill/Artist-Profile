@@ -4,3 +4,8 @@ body {
 
   color: white;
 }
+
+.videos{
+  display: flex;
+  justify-content: center;
+}

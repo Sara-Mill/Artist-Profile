@@ -7,6 +7,11 @@ var searchedArtistEl = document.querySelector("#searchedArtist");
 var searchField=document.getElementById("inputArtist");
 var msgDiv = document.querySelector("#msg");
 var deezerData =document.getElementById("deezerdata");
+var deezerData1 = document.querySelector(".deezerdata1");
+var deezerData2 = document.querySelector(".deezerdata2");
+var deezerData3 = document.querySelector(".deezerdata3");
+var deezerData4 = document.querySelector(".deezerdata4");
+var deezerData5 = document.querySelector(".deezerdata5");
 
 //button function to search artist
 button.addEventListener("click", function(event){
@@ -52,13 +57,19 @@ function fetchArtist(event){
 	}).then (function (data){
 		if(data){
 			console.log(data)
+			
+			deezerData1.append(JSON.stringify(data.data[0].title))
+			deezerData2.append(JSON.stringify(data.data[1].title))
+			deezerData3.append(JSON.stringify(data.data[2].title))
+			deezerData4.append(JSON.stringify(data.data[3].title))
+			deezerData5.append(JSON.stringify(data.data[4].title))
+
 		}else{
 			alert("no artist found")
 		}
 	})
-	control.append(userInput, artistUrl);
+	
 }
 buttonEl.addEventListener('click', fetchArtist)
-
 
 
