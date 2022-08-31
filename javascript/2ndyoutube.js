@@ -32,7 +32,7 @@ $(document).ready(function() {
                 //The backtick symbol(`) allows you to write multiple lines of html code
                 video = `
                 
-                <iframe width="420" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
+                <iframe width="280" height="210" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
                 
                 `
 

@@ -1,11 +1,19 @@
 body {
   background-color: black;
-  height: 150vh;
+  height: 200vh;
 
   color: white;
 }
 
-.videos{
+#videos1{
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+
+}
+
+br {
+color: white;
 }
