@@ -66,7 +66,7 @@ function fetchArtist(event){
 			deezerData5.append(JSON.stringify(data.data[4].title))
 
 		}else{
-			alert("no artist found")
+			return
 		}
 	})
 	
