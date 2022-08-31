@@ -43,13 +43,13 @@ function apicall(event) {
 var getData = () =>{
 	var userInput = input.value
 	console.log(userInput)
-	
+
 } 
 function fetchArtist(event){
 	event.preventDefault();
-	
+
 	var searchTerm=searchField.value
-	
+
 	let artistUrl=`https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchTerm}`
 	fetch(artistUrl, options)
 	.then(function(res){
@@ -70,5 +70,3 @@ buttonEl.addEventListener('click', apicall)
 
 buttonEl.addEventListener('click', fetchArtist)
 fetchArtist()
-
-
