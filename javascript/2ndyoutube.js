@@ -1,8 +1,8 @@
 //Write the function using jQuery
 $(document).ready(function() {
 
-    var API_KEY= "AIzaSyCcHAR_B8YZIieZPmgHgV5vu93C_Hh9sFU";
-
+    //var API_KEY= "AIzaSyCcHAR_B8YZIieZPmgHgV5vu93C_Hh9sFU";
+    var API_KEY= "AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI";
     var video = ""
 
 
