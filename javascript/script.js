@@ -53,12 +53,12 @@ function fetchArtist(event){
 		if(data){
 			console.log(data)
 			
-			deezerData.append(JSON.stringify(data.data[0].artist.name + " ;" + " Album :  " + data.data[0].album.title + " ; Title Track : " + data.data[0].title + "; Link : " + data.data[0].artist.link))
+			deezerData.append(JSON.stringify(data.data[0].artist.name + " ;" + " Album :  " + data.data[0].album.title + " ; Title Track : " + data.data[0].title + "Link : "+ data.data[0].artist.link))
 		}else{
 			alert("no artist found")
 		}
 	})
-	control.append(userInput, artistUrl);
+	
 }
 buttonEl.addEventListener('click', fetchArtist)
 
