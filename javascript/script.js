@@ -52,6 +52,7 @@ function fetchArtist(event){
 	}).then (function (data){
 		if(data){
 			console.log(data)
+			deezerData.append('<li>' + JSON.stringify(data))
 		}else{
 			alert("no artist found")
 		}
