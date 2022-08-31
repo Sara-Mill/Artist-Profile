@@ -1,6 +1,13 @@
 body {
   background-color: black;
   height: 150vh;
-
   color: white;
+}
+
+#h2 {
+  text-align: center;
+}
+
+#videos1 {
+  margin-left: 85px;
 }

@@ -14,7 +14,7 @@ $(document).ready(function() {
             var search = $("#inputArtist").val()
 
             //This will pass through the api key + the user input from search, and display 5 videos
-            videoSearch(API_KEY,search, 4)
+            videoSearch(API_KEY,search, 1)
 
     })
 
