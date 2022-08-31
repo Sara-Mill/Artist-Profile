@@ -1,10 +1,11 @@
-var buttonEl = document.getElementById(".searchbutton");
+var buttonEl = document.getElementById("searchbutton");
 var button = document.querySelector(".button");
 var searchedArtist = document.querySelector("#searchedArtist");
 var button= document.querySelector(".button");
 var searchedArtistEl = document.querySelector("#searchedArtist");
 var searchField=document.getElementById("inputArtist");
 var msgDiv = document.querySelector("#msg");
+var deezerData =document.getElementById("deezerdata");
 
 //button function to search artist
 button.addEventListener("click", function(event){
@@ -31,15 +32,6 @@ const options = {
 		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
 	}
 };
-function apicall(event) {
-    event.preventDefault()
-    fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${inputArtist}`, options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-	console.log("test");
-
-}
 var getData = () =>{
 	var userInput = input.value
 	console.log(userInput)
@@ -57,18 +49,15 @@ function fetchArtist(event){
 
 
 	}).then (function (data){
-		if(!data){
-			alert("no artist found")
-		}else{
+		if(data){
 			console.log(data)
+		}else{
+			alert("no artist found")
 		}
 	})
 	control.append(userInput, artistUrl);
 }
-
-buttonEl.addEventListener('click', apicall)
-
 buttonEl.addEventListener('click', fetchArtist)
-fetchArtist()
+
 
 
