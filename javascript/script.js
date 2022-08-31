@@ -1,3 +1,4 @@
+
 var buttonEl = document.getElementById("searchbutton");
 var button = document.querySelector(".button");
 var searchedArtist = document.querySelector("#searchedArtist");

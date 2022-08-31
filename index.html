@@ -13,9 +13,9 @@
 <!--Body of webpage-->
 <body>
   <!--Header-->
-  <section class="block">
+  <section class="hero is-link has-background-link has-text-centered ">
     <div class="hero-body">
-      <p class="block-text">
+      <p class="title is-size-1">
         Know Your Artist
       </p>
       <p class="subtitle">
@@ -25,40 +25,31 @@
   </section>
 <br>
 <!--Label of search button-->
-<section class="block2">
-  <div class="hero-body">
-    <p class="block-text">
-      Search Artist Name:
-    </p>
-  </div>
-</section>
+<label class="label has-text-link is-size-4 has-text-centered ">Search Artist Name:</label>
 <!--Search button-->
 <div class="field has-addons is-grouped is-grouped-centered">
   <label class="label has-text-link">Search Artist Name</label>
-
   <div class="control">
     <input class="input artist" id = "inputArtist" type="text" placeholder="Enter name of artist">
   </div>
+
   <div class="control">
-
     <button class="button is-link" id="searchbutton">
-    <button class="button is-link" id = "search">
-
-      Search
-    </button>
+        Search
+      </button>
+    </div>
   </div>
-</div>
 
-<br>
-<!--Displays artist's name-->
-<section class="block3">
-  <div class="hero-body">
-    <p class="block-text">Artist: <span id="searchedArtist"></span></p>
-  </div>
-</section>
+  <br>
+  <!--Displays artist's name-->
+  <section class="column has-background-link has-text-centered has-text-light is-size-3 is-6 is-half is-offset-one-quarter">
+    <p>Artist: <span id="searchedArtist"></span></p>
+    </div>
+  </section>
+  
+   <br>
+  <!--Displays Wikipidia page-->
 
- <br>
-<!--Displays Wikipidia page-->
 
 <div class = "columns is-variable is-3">
   <div class = "column ">
@@ -83,21 +74,19 @@
               <div class ="col-md-12">
                   <div id = "videos1"> </div>
 
+
+  
+
               </div>
-        </div>
-      </div>
-  </div>    
-</div>
+    </div>
 <!--Script tags-->
 
 <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://apis.google.com/js/api.js"></script>
 <!--Custom Javascript--> 
-
-  
-  <script src="./javascript/2ndyoutube.js"></script>
-  <script src="./javascript/script.js"></script>
+<script src="./javascript/2ndyoutube.js"></script>
+<script src="./javascript/script.js"></script>
 
 </body>
 </html>
