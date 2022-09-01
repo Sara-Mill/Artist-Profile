@@ -58,6 +58,7 @@ function fetchArtist(event){
 		if(data){
 			console.log(data)
 			
+
 			deezerData1.append(JSON.stringify(data.data[0].title))
 			deezerData2.append(JSON.stringify(data.data[1].title))
 			deezerData3.append(JSON.stringify(data.data[2].title))
