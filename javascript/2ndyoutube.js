@@ -1,8 +1,8 @@
 //Write the function using jQuery
 $(document).ready(function() {
 
-    var API_KEY= "AIzaSyCcHAR_B8YZIieZPmgHgV5vu93C_Hh9sFU";
-
+    //var API_KEY= "AIzaSyCcHAR_B8YZIieZPmgHgV5vu93C_Hh9sFU";
+    var API_KEY= "AIzaSyA5PA77ib11vqf_lRxL0Jl9iT6hANK59hI";
     var video = ""
 
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
             var search = $("#inputArtist").val()
 
             //This will pass through the api key + the user input from search, and display 5 videos
-            videoSearch(API_KEY,search, 4)
+            videoSearch(API_KEY,search, 1)
 
     })
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
                 //The backtick symbol(`) allows you to write multiple lines of html code
                 video = `
                 
-                <iframe width="420" height="315" src="http://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allowfullscreen></iframe>
                 
                 `
 
