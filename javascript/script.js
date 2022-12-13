@@ -26,7 +26,7 @@ displayLastSearch();
 
 function displayLastSearch() {
     var artist = localStorage.getItem("artist");
-
+	
    searchedArtistEl.textContent = artist;
     console.log(artist);
 }
@@ -60,11 +60,15 @@ function fetchArtist(event){
 		}else {
 			console.log(data)
 			
-
+			deezerData1.innerHTML= "";
 			deezerData1.append(JSON.stringify(data.data[0].title))
+			deezerData2.innerHTML= "";
 			deezerData2.append(JSON.stringify(data.data[1].title))
+			deezerData3.innerHTML= "";
 			deezerData3.append(JSON.stringify(data.data[2].title))
+			deezerData4.innerHTML= "";
 			deezerData4.append(JSON.stringify(data.data[3].title))
+			deezerData5.innerHTML= "";
 			deezerData5.append(JSON.stringify(data.data[4].title))
 
 		}
@@ -72,5 +76,4 @@ function fetchArtist(event){
 	
 }
 buttonEl.addEventListener('click', fetchArtist)
-
 
