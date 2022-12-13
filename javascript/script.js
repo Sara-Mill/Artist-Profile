@@ -41,7 +41,6 @@ const options = {
 var getData = () =>{
 	var userInput = input.value
 	console.log(userInput)
-	
 } 
 function fetchArtist(event){
 	event.preventDefault();
@@ -55,7 +54,10 @@ function fetchArtist(event){
 
 
 	}).then (function (data){
-		if(data){
+		if(data.data.length===0){
+			window.alert("No artist found with this name")
+			
+		}else {
 			console.log(data)
 			
 
@@ -65,8 +67,6 @@ function fetchArtist(event){
 			deezerData4.append(JSON.stringify(data.data[3].title))
 			deezerData5.append(JSON.stringify(data.data[4].title))
 
-		}else{
-			return
 		}
 	})
 	
